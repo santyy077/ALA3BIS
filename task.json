@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "titulo": "a darle con todo",
+    "descripcion": "help me , me papeo el JS",
+    "estado": "PENDING",
+    "creacion": "2026-10-29",
+    "ultimaEdicion": null,
+    "vencimiento": "2026-11-12",
+    "dificultad": 1
+  }
+]

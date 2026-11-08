@@ -1,21 +1,12 @@
-function formatearTarea(dificultad) {
-    const difficult = String(dificultad).toLowerCase().trim();
+export function formatearDificultad(dificultad) {
+    const diff = Number(dificultad);
 
-    switch (difficult) {
-        case 'facil':
-        case 'easy':
-        case '1':
-        case 'f':
+    switch (diff) {
+        case 1:
             return '★☆☆ (Fácil)';
-        case 'media':
-        case 'medium':
-        case '2':
-        case 'm':
+        case 2:
             return '★★☆ (Media)';
-        case 'dificil':
-        case 'hard':
-        case '3':
-        case 'd':
+        case 3:
             return '★★★ (Difícil)';
         default:
             return '★☆☆ (Fácil)';
@@ -23,6 +14,39 @@ function formatearTarea(dificultad) {
 }
 
 export function formatearEstado(texto) {
-    if()
+    const estado = String(texto).toLowerCase().trim();
 
+    switch (estado) {
+        case '1':
+        case 'p':
+        case'pendiente':
+         case'pending':
+        return 'PENDING';
 
+        case '2':
+        case 'e':
+        case 'en curso':
+        case 'in-progress':
+        case 'in progress':
+        return 'IN_PROGRESS';
+
+        case '3':
+        case 't':
+        case 'terminada':
+        case 'finished':
+        case 'completada':
+        return 'FINISHED';
+
+        case 4:
+        case 'c':
+        case 'cancelada':
+        case 'canceled':
+        return 'CANCELED';
+
+        default:
+        return 'PENDING';
+    }
+
+                            
+    
+    }
